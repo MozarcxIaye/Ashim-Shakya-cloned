@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+     background-image: url(./image/sep09.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     color: white;
+     font-family: 'Poppins', sans-serif;
+     overflow-x: hidden;
+}
+main{
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+}
+/* NAVBAR  */
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 3rem;
+    background: #222;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    
+}
+.nav-bar .logo img{
+    /* object-fit: contain; */
+    height: 3.5rem;
+}
+.nav-bar > .logo > span {
+    text-transform: uppercase;
+    color: rgb(192, 190, 190);
+
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: .85rem;
+}
+.nav-links{
+    padding:0 5rem;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: rgb(192, 190, 190);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.nav-links li a:hover{
+    color: whitesmoke;
+}
+
+/* MAIN - HOME PAGE */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    justify-content: center;
+    height: 60vh;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.container span{
+  font-size: 1rem;
+  text-transform: uppercase;
+    margin: 0 auto;
+    font-family: 'Nixie One', cursive;
+    font-weight: bolder;
+    letter-spacing: .3rem;
+    position: relative;
+}
+.container span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 2px;
+    width: 1rem;
+    background: white;
+    margin: 0 -1.8rem;
+}
+.container span::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    width: 1rem;
+    background: white;
+    margin: 0 -1.5rem;
+}
+
+/* ARTWORKS */
+#artworks{
+    width: 100vw;
+    padding: 0 8rem;
+}
+.artwork-container{
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+    
+    justify-content: center;
+    position: relative;
+    grid-column-gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  /* border: 2px solid red; */
+}
+.innerart1{
+    /* position: absolute; */
+    width: 366px;
+    /* border: 2px solid blue; */
+  height: 366px;
+  object-fit: contain;
+}
+.innerart1 > img{
+    width: 366px;
+    height: 366px;
+}
+
+/* GAMES */
+#game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+#game > h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+}
+#game > span {
+    font-size: .9rem;
+    font-weight: 200;
+    letter-spacing: 0.4rem;
+    margin-bottom: 2.5rem;
+}
+.gameContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border: 2px red solid;
+}
+
+
+
+
+
+/* MUSIC AND MOTION  */
+#music{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+#music > h1{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+}
+#music > span{
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 200;
+    letter-spacing: 0.4rem;
+    margin-bottom: 2.5rem;
+}
+.art-container{
+    display: flex;
+    flex-direction: column;
+    /* gap: 4rem; */
+}
+.art-container > figcaption{
+    font-size: .8rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+}
+.art-container > .inner-art-frame > .frame1 > figcaption,
+.art-container > .inner-art-frame > .frame2 > figcaption,
+.art-container > .inner-art-frame > .frame3 > figcaption{
+    font-size: .8rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#music > .art-container > .inner-art-frame {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ABOUT */
+#about{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 12rem;
+    gap: 6rem;
+}
+#about > .about-text-container > h1{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 3rem 0;
+    position: relative;
+}
+#about > .about-text-container > h1::before{
+    content: '';
+    height: 2px;
+    width: 6rem;
+    position: absolute;
+    top: -2.7rem;
+    left: 0;
+    /* margin-bottom: -4rem; */
+    background: rgb(173, 172, 172);
+
+}
+
+#about > .about-text-container > p{
+    font-size: 0.82rem;
+    font-weight: 200;
+    /* padding-right: .5rem; */
+}
+
+/* CONTACT  */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    justify-content: center;
+    width: 100vw;
+    gap: 2rem;
+    height: 70vh;
+    padding:0 8rem;
+    
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    height: 63%;
+}
+#contact > h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    position: relative;
+}
+#contact > h1::after{
+    content: '';
+    bottom: -3rem;
+    background: rgb(185, 183, 183);
+    left: 46%;
+    height: 2px;
+    width: 6rem;
+    position: absolute;
+}
+.contact-container > form{
+    display: flex;
+    flex-direction: column;
+    /* border: none; */
+    padding: 0 1rem;
+    outline: none;
+}
+.contact-container > form > input{
+    margin: .5rem;
+    padding: .85rem;
+    padding-right: 15rem;
+}
+.contact-container > form > input:nth-child(4){
+    padding-bottom:3.5rem;
+}
+.contact-container > form > button{
+    width: 12rem;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.75rem;
+    background: rgb(2, 156, 252);
+    margin-left: 0.45rem;
+    margin-top: 1rem;
+    border: none;
+}
+.contact-container > form > input::placeholder{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    
+}
+
+
+/* FOOTER  */
+footer{
+    padding: 0 15rem;
+    font-size: .8rem;
+    font-weight: 200;
+}
+footer > p,
+footer > .sponser{
+    text-align: center;
+}
+.sponser > i{
+    font-size: 3rem;
+    margin: 1.5rem;
+
+}
+footer > span{
+    text-align: left;
+    color: rgb(174, 172, 172);
+}
