@@ -7,13 +7,44 @@ body{
      background-image: url(./image/sep09.jpg);
      background-size: cover;
      background-repeat: no-repeat;
+     background-attachment: fixed;
      color: white;
      font-family: 'Poppins', sans-serif;
      overflow-x: hidden;
 }
+
+.pageBreaker{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  .pageBreaker > span{
+    color: rgb(174, 171, 171);
+    font-size: 1.4rem;
+    position: relative;
+    font-weight: 200;
+  }
+  .pageBreaker > span::before{
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 1px;
+    background: rgb(203, 200, 200);
+    top: 50%;
+    left: -4rem; 
+  }
+  .pageBreaker > span::after{
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 1px;
+    background: rgb(180, 178, 178);
+    top: 50%;
+    right: -4rem;
+  }
 main{
-    margin-bottom: 10rem;
-    margin-top: 5rem;
+    margin-bottom: 7rem;
+    margin-top: 8rem;
 }
 /* NAVBAR  */
 
@@ -73,8 +104,8 @@ main{
     flex-direction: column;
     /* border: 1px solid red; */
     justify-content: center;
-    height: 60vh;
-    margin-top: 2rem;
+    height: 50vh;
+    margin-top: 4rem;
     gap: 2rem;
 }
 .container img{
@@ -116,6 +147,7 @@ main{
 #artworks{
     width: 100vw;
     padding: 0 8rem;
+    margin-bottom: 4rem;
 }
 .artwork-container{
     display: grid;
@@ -132,41 +164,43 @@ main{
 .innerart1{
     /* position: absolute; */
     width: 366px;
+    position: relative;
+    cursor: pointer;
     /* border: 2px solid blue; */
   height: 366px;
   object-fit: contain;
+}
+.art-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    top: 0;
 }
 .innerart1 > img{
     width: 366px;
     height: 366px;
 }
-
-/* GAMES */
-#game{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
+.innerart1:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(222, 184, 135, 0.5);
 }
-#game > h1 {
-    font-weight: 400;
-    font-size: 2.5rem;
-    letter-spacing: 0.4rem;
+.innerart1 > .art-text{
+    position: absolute;
+    transition: .5s;
+    opacity: 0;
 }
-#game > span {
-    font-size: .9rem;
-    font-weight: 200;
-    letter-spacing: 0.4rem;
-    margin-bottom: 2.5rem;
+.innerart1:hover .art-text{
+    opacity: 1;
 }
-.gameContainer{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    border: 2px red solid;
-}
-
-
 
 
 
@@ -177,6 +211,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    margin-bottom: 2rem;
 
 }
 #music > h1{
@@ -195,6 +230,7 @@ main{
 .art-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     /* gap: 4rem; */
 }
 .art-container > figcaption{
@@ -226,7 +262,8 @@ main{
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    padding: 12rem;
+    padding:0 12rem;
+    margin-bottom: 4rem;
     gap: 6rem;
 }
 #about > .about-text-container > h1{
@@ -264,6 +301,7 @@ main{
     gap: 2rem;
     height: 70vh;
     padding:0 8rem;
+    margin-bottom: 4rem;
     
 }
 .contact-container{
@@ -331,7 +369,7 @@ footer > p,
 footer > .sponser{
     text-align: center;
 }
-.sponser > i{
+.sponser > a> i{
     font-size: 3rem;
     margin: 1.5rem;
 
