@@ -1,4 +1,81 @@
 
+#artworks{
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    background: transparent;
+}
+.wrapper{
+    max-width: 1200px ;
+    position: relative;
+}
+.wrapper i{
+    background: #fff;
+    height: 46px;
+
+    width: 46px;
+    position: absolute;
+    top: 50%;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+.wrapper i:first-child{
+    left: -23px;
+    color: black;
+    display: none;
+}
+.wrapper i:last-child{
+    right: -23px;
+    color: black;
+}
+
+.wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+
+}
+.carousel.dragging img{
+    pointer-events: none;
+} 
+.carousel img{
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100%/3);
+}
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 1100px){
+    .carousel img{
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width: 550px) {
+    .carousel img{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
 /* For Large screen */
 
 @media all and (max-width: 1560px) and (min-width: 1048px){
@@ -802,7 +879,6 @@ footer > span{
         font-family: 'Poppins', sans-serif;
         overflow-x: hidden;
    }
-   
 .pageBreaker{
     display: flex;
     justify-content: center;
@@ -950,18 +1026,20 @@ footer > span{
     justify-content: center;
     align-items: center;
     gap: 1.2rem;
+    padding: 0 1rem;
     margin-bottom: 2rem;
 }
 #music > h1{
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 2.2rem;
+    font-size: 1.4rem;
+    
     letter-spacing: 0.1rem;
 }
 
 #music > span{
     text-transform: uppercase;
-    font-size: .8srem;
+    font-size: .55rem;
     font-weight: 200;
     letter-spacing: 0.1rem;
     margin-bottom: 2.5rem;
