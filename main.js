@@ -33,7 +33,7 @@ const autoSlide = () => {
 
 
     positionDiff = Math.abs(positionDiff);
-    let firstImgWidth = firstImg.clientWidth + 14;
+    let firstImgWidth = firstImg.clientWidth + 20;
     let valDifference = firstImgWidth - positionDiff;
 
     if(carousel.scrollLeft > prevScrollLeft) {
