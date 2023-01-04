@@ -204,7 +204,9 @@ main{
     font-weight: 400;
 
 } 
-
+.container{
+    margin-bottom: 3rem;
+}
  /* try */
 .container > img{
     /* border: 2px solid blue; */
