@@ -1,9 +1,20 @@
 
-// let menu = document.querySelector('.menu');
-// menu.onclick = function() {
-//     navBar = document.querySelector('ul');
-//     navBar.classList.toggle('active');
-// }
+let menu = document.querySelector('.menu');
+menu.onclick = function() {
+    navBar = document.querySelector('ul');
+    navBar.classList.toggle('active');
+}
+
+navBar = document.querySelector('nav');
+let link = document.querySelectorAll('a');
+link.forEach(link => {
+
+    link.onclick = function() {
+        navBar = document.querySelector('.nav-links');
+        navBar.classList.toggle('active');
+    }
+});
+
 
 
 const carousel = document.querySelector('.carousel'),
