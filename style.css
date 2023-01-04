@@ -124,7 +124,7 @@ body{
     right: -4rem;
   }
 main{
-    margin-bottom: 7rem;
+    margin-bottom: 11rem;
     /* margin-top: 2.8rem; */
 }
 /* NAVBAR  */
@@ -180,32 +180,9 @@ main{
 
 /* MAIN - HOME PAGE */
 
-.main-container{
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid red; */
-    justify-content: center;
-    height: 90vh;
-    width: 100vw;
-    /* border: 2px solid red; */
-    /* margin-top: 4rem; */
-    gap: 1rem;
-    text-align: center;
-}
-.main-container img{
-    height: 80%;
-    width: 100%;
-    /* border: 2px solid white; */
-    object-fit: contain;
-}
- .main-container > h1{
-    /* text-align: center; */
-    text-transform: uppercase;
-    font-weight: 400;
-
-} 
 .container{
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
+    margin-top: 2.4rem;
 }
  /* try */
 .container > img{
@@ -215,36 +192,6 @@ main{
     width: 100vw;
 }
 /* banner   */
-
-.main-container span{
-  font-size: 1rem;
-  text-transform: uppercase;
-    margin: 0 auto;
-    font-family: 'Nixie One', cursive;
-    font-weight: bolder;
-    letter-spacing: .3rem;
-    position: relative;
-}
-.main-container span::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    height: 2px;
-    width: 1rem;
-    background: white;
-    margin: 0 -1.8rem;
-}
-.main-container span::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    height: 2px;
-    width: 1rem;
-    background: white;
-    margin: 0 -1.5rem;
-}
 
 /* ARTWORKS */
 #artworks{
@@ -376,12 +323,11 @@ main{
 /* ABOUT */
 #about{
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    justify-content: center;
+    grid-template-columns: 4fr 3fr;
+    /* justify-content: center; */
     /* align-items: center; */
-    padding:0 5rem;
+    padding: 0 12rem;
     margin-bottom: 4rem;
-    gap: 2rem;
 }
 #about > .about-text-container > h1{
     font-size: 2rem;
@@ -400,9 +346,15 @@ main{
     background: rgb(173, 172, 172);
 
 }
+.about-text-container{
+    padding-left: 2rem;
+}
+.aboutImgContainer{
+    padding: 0rem 1rem 5rem 1rem;
+    width: 91%;
+}
 .aboutImgContainer > img{
     width: 100%;
-
 }
 
 #about > .about-text-container > p{
@@ -425,14 +377,13 @@ main{
 .contact-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    /* height: 63%; */
+    justify-content:center;
 }
 .Contact-imgContainer{
-    padding: 5rem 1rem 5rem 5rem;
+    padding: 5rem 2rem 5rem 16rem;
 }
 .Contact-imgContainer > img{
-    width: 100%;
+    width:100%;
 }
 #contact > h1{
     text-align: center;
@@ -588,63 +539,9 @@ footer > span{
 }
 /* MAIN - HOME PAGE */
 
-.main-container{
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid red; */
-    justify-content: center;
-    height: 90vh;
-    width: 100vw;
-    /* border: 2px solid red; */
-    /* margin-top: 4rem; */
-    gap: 1rem;
-    text-align: center;
-}
-.main-container img{
-    height: 80%;
-    width: 100%;
-    /* border: 2px solid white; */
-    object-fit: contain;
-}
- .main-container > h1{
-    /* text-align: center; */
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 1.7rem;
 
-} 
-
-.main-container span{
-    font-size: .8rem;
-    text-transform: uppercase;
-      margin: 0 auto;
-      font-family: 'Nixie One', cursive;
-      font-weight: bolder;
-      letter-spacing: .3rem;
-      position: relative;
-  }
-  .main-container span::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 50%;
-      height: 2px;
-      width: 1rem;
-      background: white;
-      margin: 0 -1.8rem;
-  }
-  .main-container span::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 50%;
-      height: 2px;
-      width: 1rem;
-      background: white;
-      margin: 0 -1.5rem;
-  }
 .container{
-    margin-bottom: 2.6rem;
+    margin-top: 2.6rem;
     display: flex;
     flex-direction: column;
     /* border: 1px solid red; */
@@ -658,66 +555,70 @@ footer > span{
 }
 
 /* ARTWORKS */
+
 #artworks{
-    width: 100vw;
-    /* padding: 0 2rem; */
-    margin-bottom: 4rem;
-    
-}
-.artwork-container{
-    display: grid;
-    gap: 1rem;
-    width: 100vw;
-    /* padding: 0 1rem; */
-    justify-content: center;
-    /* position: relative; */
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  border: 2px solid red;
-}
-
-.innerart1{
-    /* position: absolute; */
-    width: 15.5rem;
-    position: relative;
-    cursor: pointer;
-    border: 2px solid blue;
-  height: 15.5rem;
-  margin: 0 .5rem;
-  object-fit: contain;
-}
-.innerart1 > img{
-    width: 15.5rem;
-    height: 15.5rem;
-}
-.art-text{
-    width: 100%;
-    height: 100%;
+    padding: 0 5rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 1.5rem;
-    top: 0;
+    justify-content: center;
+    min-height: 60vh;
+    /* border: 2px solid red; */
+    background: transparent;
+    margin-bottom: 2rem;
 }
-.innerart1:hover::before {
-    content: '';
+.wrapper{
+    max-width: 858px ;
+    /* border: 2px solid blue; */
+    position: relative;
+}
+.wrapper i{
+    background: #fff;
+    height: 46px;
+
+    width: 46px;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(222, 184, 135, 0.5);
+    top: 50%;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
 }
-.innerart1 > .art-text{
-    position: absolute;
-    transition: .5s;
-    opacity: 0;
+.wrapper i:first-child{
+    left: -23px;
+    color: black;
+    display: none;
 }
-.innerart1:hover .art-text{
-    opacity: 1;
+.wrapper i:last-child{
+    right: -23px;
+    color: black;
 }
 
+.wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+
+}
+.carousel.dragging img{
+    pointer-events: none;
+} 
+.carousel img{
+    height: 270px;
+    object-fit: cover;
+    margin-left: 12px;
+    width: calc(100% / 2);
+}
+.carousel img:first-child{
+    margin-left: 0px;
+}
 /* MUSIC AND MOTION  */
 #music{
     display: flex;
@@ -820,9 +721,14 @@ footer > span{
     font-weight: 200;
     /* padding-right: .5rem; */
 }
-
+.aboutImgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
 .aboutImgContainer > img{
-    width: 100%;
+    width: 75%;
 }
 
 
@@ -1005,65 +911,10 @@ footer > span{
 }
 /* MAIN - HOME PAGE */
 
-.main-container{
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid red; */
-    justify-content: center;
-    height: 90vh;
-    width: 100vw;
-    /* border: 2px solid red; */
-    /* margin-top: 4rem; */
-    gap: 1rem;
-    text-align: center;
-}
-.main-container img{
-    height: 60%;
-    width: 100%;
-    /* border: 2px solid white; */
-    object-fit: contain;
-}
- .main-container > h1{
-    /* text-align: center; */
-    text-transform: uppercase;
-    font-weight: 400;
-
-} 
-
-
-.main-container span{
-    font-size: 1rem;
-    text-transform: uppercase;
-      margin: 0 auto;
-      font-family: 'Nixie One', cursive;
-      font-weight: bolder;
-      letter-spacing: .3rem;
-      position: relative;
-  }
-  .main-container span::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 50%;
-      height: 2px;
-      width: 1rem;
-      background: white;
-      margin: 0 14px;
-  }
-  .main-container span::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 50%;
-      height: 2px;
-      width: 1rem;
-      background: white;
-      margin: 0 16px;
-  }
 
 .container{
 
-    margin-bottom: 2.4rem;
+    margin-top: 2.8rem;
     display: flex;
     flex-direction: column;
     /* border: 1px solid red; */
@@ -1084,13 +935,14 @@ footer > span{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 60vh;
+    min-height: 40vh;
     /* border: 2px solid red; */
     background: transparent;
     margin-bottom: 2rem;
 }
 .wrapper{
-    max-width: 400px ;
+    max-width: 358px ;
+    /* border: 2px solid blue; */
     position: relative;
 }
 .wrapper i{
