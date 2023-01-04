@@ -187,7 +187,7 @@ main{
     justify-content: center;
     height: 90vh;
     width: 100vw;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* margin-top: 4rem; */
     gap: 1rem;
     text-align: center;
@@ -195,7 +195,7 @@ main{
 .main-container img{
     height: 80%;
     width: 100%;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     object-fit: contain;
 }
  .main-container > h1{
@@ -642,7 +642,7 @@ footer > span{
       margin: 0 -1.5rem;
   }
 .container{
-    margin-top: 2.4rem;
+    margin-bottom: 2.6rem;
     display: flex;
     flex-direction: column;
     /* border: 1px solid red; */
